@@ -48,7 +48,11 @@ p {
 :root {
   --white: #fff;
   --black: #000;
-
+  --pistacho: #bedbaf;
+  --light-pistacho: #d4fabf;
+  --dark-green: #1f505c;
+  --green: #47868b;
+  --light-green: #80c691;
 }
 
 
