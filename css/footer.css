@@ -1,0 +1,14 @@
+.footer-container {
+    background-color: var(--dark-green);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    min-height: 300px;
+    display: flex;
+}
+
+.footer_center_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
