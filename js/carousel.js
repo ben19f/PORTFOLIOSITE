@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const track = document.querySelector(".carousel-cards");
-    const cards = document.querySelectorAll(".portfolio-carousel__card");
-    const prevBtn = document.querySelector(".portfolio-carousel-btn--prev");
-    const nextBtn = document.querySelector(".portfolio-carousel-btn--next");
+    const verstkaTrack = document.querySelector(".portfolio-carousel__cards");
+    const verstkaCard = document.querySelectorAll(".portfolio-carousel__card--verstka");
+    const prevBtn = document.getElementById("verstka-btn--prev");
+    const nextBtn = document.getElementById("verstka-btn--next");
 
-    const cardWidth = cards[0].offsetWidth + 10;
+    const cardWidth = verstkaCard[0].offsetWidth + 10;
     let index = 0;
 
     function updateCarousel() {
-        track.style.transform = `translateX(${-index * cardWidth}px)`;
+        verstkaTrack.style.transform = `translateX(${-index * cardWidth}px)`;
     }
 
     nextBtn.addEventListener("click", () => {
         index++;
-        if (index > cards.length - 3) {
+        if (index > verstkaCard.length - 3) {
             index = 0;
         }
         updateCarousel();
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     prevBtn.addEventListener("click", () => {
         index--;
         if (index < 0) {
-            index = cards.length - 3;
+            index = verstkaCard.length - 3;
         }
         updateCarousel();
     });
