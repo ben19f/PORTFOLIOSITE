@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const verstkaTrack = document.querySelector(".portfolio-carousel__cards");
+    const verstkaTrack = document.getElementById("verstka-kards");
     const verstkaCard = document.querySelectorAll(".portfolio-carousel__card--verstka");
     const prevBtn = document.getElementById("verstka-btn--prev");
     const nextBtn = document.getElementById("verstka-btn--next");
 
-    const cardWidth = verstkaCard[0].offsetWidth + 10;
+    const cardWidth = verstkaCard[0].offsetWidth + 70;
     let index = 0;
 
     function updateCarousel() {
